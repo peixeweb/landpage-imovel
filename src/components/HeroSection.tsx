@@ -34,20 +34,36 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
       >
         <div className="max-w-4xl mx-auto text-white space-y-5 animate-fade-in z-10">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-md border border-amber-400/50 text-amber-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg">
-            <Bot className="w-4 h-4 text-amber-400" />
-            <span>Imobiflow • Landing Pages com IA para Corretores & Imobiliárias</span>
+          <div className="inline-flex items-center gap-2 bg-emerald-500/20 backdrop-blur-md border border-emerald-400/50 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg">
+            <Shield className="w-4 h-4 text-emerald-400" />
+            <span>Corretores fecham 3x mais respondendo em até 5 min — sua IA faz isso 24/7</span>
           </div>
 
           {/* Main Headline */}
           <h1 id="hero-title" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-black tracking-tight leading-tight text-white drop-shadow-md">
-            Cadastre o imóvel. A IA gera a <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400">Landing Page</span> e qualifica o comprador.
+            Pare de perder leads para quem responde rápido. <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400">Sua IA qualifica e entrega no WhatsApp</span> enquanto você atende visitas.
           </h1>
 
           {/* Subtitle */}
           <p id="hero-subtitle" className="text-sm sm:text-base md:text-lg text-stone-200 font-light max-w-2xl mx-auto drop-shadow leading-relaxed">
-            Seja você corretor autônomo ou imobiliária: publique seus imóveis em páginas exclusivas com um <strong>Agente de IA 24/7</strong> que atende, tira dúvidas de financiamento e envia o lead quente direto no seu WhatsApp.
+            <strong>Atendente IA 24/7</strong> responde na hora, calcula escore de renda, valida entrada e financiamento — só chega no seu WhatsApp quem tem perfil para comprar.
           </p>
+
+          {/* Social Proof Bar */}
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-2 text-xs text-stone-300 border-t border-white/20 px-4 py-2">
+            <span className="flex items-center gap-1.5">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+              <strong>+2.800</strong> leads qualificados este mês
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Zap className="w-3.5 h-3.5 text-amber-400" />
+              Tempo médio de resposta: <strong>47 seg</strong>
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Bot className="w-3.5 h-3.5 text-blue-400" />
+              <strong>12</strong> imobiliárias ativas
+            </span>
+          </div>
 
           {/* Key Value Prop Pills */}
           <div className="flex flex-wrap items-center justify-center gap-2.5 pt-1 text-xs text-stone-300">
@@ -73,8 +89,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
                 onClick={onOpenRegisterModal}
                 className="bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2 cursor-pointer"
               >
-                <PlusCircle className="w-4 h-4" />
-                <span>Criar Landing Page com IA</span>
+                <Zap className="w-4 h-4" />
+                <span>Teste 1 mês grátis</span>
                 <Sparkles className="w-3.5 h-3.5 text-amber-200" />
               </button>
             )}
@@ -84,9 +100,25 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
               onClick={onExploreClick}
               className="bg-white/15 hover:bg-white/25 text-white border border-white/30 text-xs sm:text-sm font-semibold px-6 py-3.5 rounded-xl transition-all backdrop-blur-xs cursor-pointer flex items-center gap-2"
             >
-              <span>Explorar Imóveis & Demonstração</span>
+              <span>Ver demonstração ao vivo</span>
               <ArrowRight className="w-4 h-4" />
             </button>
+          </div>
+
+          {/* Guarantee Strip */}
+          <div className="pt-4 flex flex-wrap items-center justify-center gap-6 text-[11px] text-stone-300 border-t border-white/20 px-4 py-3">
+            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
+              <Shield className="w-3.5 h-3.5 text-emerald-400" />
+              Setup grátis — configuramos sua 1ª landing
+            </span>
+            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+              Cancele quando quiser — sem multa
+            </span>
+            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
+              <Zap className="w-3.5 h-3.5 text-amber-400" />
+              1ª landing page grátis para sempre
+            </span>
           </div>
         </div>
       </div>

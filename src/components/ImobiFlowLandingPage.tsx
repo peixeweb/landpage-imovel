@@ -22,7 +22,8 @@ import {
   ChevronUp,
   Star,
   Clock,
-  Check
+  Check,
+  Shield
 } from 'lucide-react';
 import { Property, Broker } from '../types';
 
@@ -100,18 +101,34 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-400/40 text-amber-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg backdrop-blur-md">
-                <Bot className="w-4 h-4 text-amber-400" />
-                <span>Plataforma Oficial de Landing Pages & Atendimento com IA</span>
+              <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg backdrop-blur-md">
+                <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                <span>Corretores fecham 3x mais respondendo em até 5 min — sua IA faz isso 24/7</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-black tracking-tight text-white leading-[1.12] drop-shadow-md">
-                Transforme cada imóvel em uma máquina de captação de <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400">leads qualificados</span>.
+                Pare de perder leads para quem responde rápido. <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400">Sua IA qualifica e entrega no WhatsApp</span> enquanto você atende visitas.
               </h1>
 
               <p className="text-base sm:text-lg text-stone-200 font-light max-w-2xl leading-relaxed drop-shadow-xs">
-                Crie Landing Pages exclusivas por imóvel em segundos. Nosso <strong>Atendente Virtual com IA 24/7</strong> tira dúvidas, calcula o escore por renda e entrega o comprador pronto direto no seu WhatsApp.
+                <strong>Atendente IA 24/7</strong> responde na hora, calcula escore de renda, valida entrada e financiamento — só chega no seu WhatsApp quem tem perfil para comprar.
               </p>
+
+              {/* Social Proof Bar */}
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-xs text-stone-300 border-t border-white/20 px-4 py-2">
+                <span className="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                  <strong>+2.800</strong> leads qualificados este mês
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <Zap className="w-3.5 h-3.5 text-amber-400" />
+                  Tempo médio de resposta: <strong>47 seg</strong>
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <Bot className="w-3.5 h-3.5 text-blue-400" />
+                  <strong>12</strong> imobiliárias ativas
+                </span>
+              </div>
 
               {/* Badges / Micro Proofs */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs text-stone-200 font-medium pt-1">
@@ -135,15 +152,26 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                   onClick={onOpenRegisterModal}
                   className="bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-sm sm:text-base font-bold px-7 py-4 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5 cursor-pointer border border-amber-400/30"
                 >
-                  <Sparkles className="w-5 h-5 text-amber-200" />
-                  <span>Como Cadastrar o Imóvel (Passo a Passo)</span>
+                  <Zap className="w-5 h-5 text-amber-200" />
+                  <span>Teste 1 mês grátis</span>
                 </button>
               </div>
 
-              {/* Sub-text disclaimer */}
-              <p className="text-[11px] text-stone-400 font-light">
-                ⚡ Sem necessidade de cartão de crédito para experimentar • Ativação imediata da sua primeira página.
-              </p>
+              {/* Guarantee Strip */}
+              <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-[11px] text-stone-300 border-t border-white/20 px-4 py-3">
+                <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                  Setup grátis — configuramos sua 1ª landing
+                </span>
+                <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                  Cancele quando quiser — sem multa
+                </span>
+                <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
+                  <Zap className="w-3.5 h-3.5 text-amber-400" />
+                  1ª landing page grátis para sempre
+                </span>
+              </div>
             </div>
 
             {/* Right Interactive Mockup Graphic */}
