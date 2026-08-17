@@ -10,12 +10,38 @@
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="/landpage-imovel/fundo-sampa.webp" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Fallback for no-JS -->
+    <noscript>
+      <style>
+        #root { display: block !important; }
+        .loading-fallback { display: flex !important; }
+      </style>
+    </noscript>
   </head>
   <body class="bg-[#faf9f6] text-stone-900 antialiased selection:bg-amber-200 selection:text-amber-900">
-    <div id="root"></div>
+    <div id="root">
+      <!-- Loading fallback shown until React hydrates -->
+      <div class="loading-fallback fixed inset-0 z-50 bg-[#faf9f6] flex items-center justify-center px-4" style="display: flex;">
+        <div class="text-center space-y-4">
+          <div class="w-16 h-16 mx-auto rounded-xl bg-gradient-to-r from-[#b87b1c] to-[#9a6514] flex items-center justify-center shadow-lg">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <p class="text-stone-600 font-medium">Carregando Imobiflow...</p>
+          <div class="w-32 h-1.5 mx-auto bg-stone-200 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] rounded-full animate-pulse" style="width: 100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
