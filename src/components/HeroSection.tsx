@@ -29,7 +29,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
         id="hero-banner-image"
         className="relative min-h-[460px] sm:min-h-[500px] md:min-h-[540px] w-full bg-cover bg-center flex flex-col items-center justify-center text-center px-4 pt-10 pb-28"
         style={{
-          backgroundImage: `linear-gradient(rgba(10, 15, 30, 0.78), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1920&q=80')`,
+          backgroundImage: `linear-gradient(rgba(10, 15, 30, 0.78), rgba(15, 23, 42, 0.85)), url('/landpage-imovel/fundo-sampa.webp')`,
         }}
       >
         <div className="max-w-4xl mx-auto text-white space-y-5 animate-fade-in z-10">
