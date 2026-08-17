@@ -408,12 +408,14 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               </div>
 
               <div className="mt-8 pt-6 border-t border-stone-200">
-                <button
-                  onClick={onOpenRegisterModal}
-                  className="w-full bg-[#b87b1c] hover:bg-[#a36b17] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all cursor-pointer text-center"
+                <a
+                  href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20entender%20o%20Modo%20Corretor%20Solo%20do%20Imobiflow."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#b87b1c] hover:bg-[#a36b17] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all text-center inline-block"
                 >
                   Entenda o Modo Corretor Solo
-                </button>
+                </a>
               </div>
             </div>
 
@@ -455,12 +457,14 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               </div>
 
               <div className="mt-8 pt-6 border-t border-stone-200">
-                <button
-                  onClick={onOpenRegisterModal}
-                  className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all cursor-pointer text-center"
+                <a
+                  href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20entender%20o%20Modo%20Equipe%20do%20Imobiflow."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all text-center inline-block"
                 >
                   Entenda o Modo Equipe & Imobiliária
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -628,12 +632,14 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 </ul>
               </div>
 
-              <button
-                onClick={onOpenRegisterModal}
-                className="mt-8 w-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all cursor-pointer text-center"
+              <a
+                href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20assinar%20o%20Plano%20Solo%20do%20Imobiflow."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 w-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all text-center inline-block"
               >
                 Assinar Plano Solo
-              </button>
+              </a>
             </div>
 
             {/* Team Plan */}
@@ -677,12 +683,14 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 </ul>
               </div>
 
-              <button
-                onClick={onOpenRegisterModal}
-                className="mt-8 w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all shadow-md cursor-pointer text-center"
+              <a
+                href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20assinar%20o%20Plano%20Imobili%C3%A1ria%20do%20Imobiflow."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all shadow-md text-center inline-block"
               >
                 Assinar Plano Imobiliária
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -752,13 +760,15 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
           </p>
 
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
-            <button
-              onClick={onOpenRegisterModal}
-              className="bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold px-8 py-4 rounded-xl shadow-xl transition-all cursor-pointer flex items-center gap-2 border border-amber-400/30"
+            <a
+              href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20entender%20como%20cadastrar%20meu%20im%C3%B3vel%20no%20Imobiflow."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold px-8 py-4 rounded-xl shadow-xl transition-all flex items-center gap-2 border border-amber-400/30"
             >
               <Sparkles className="w-4 h-4 text-amber-200" />
               <span>Entenda Como Cadastrar seu Imóvel</span>
-            </button>
+            </a>
 
             <a
               href="https://wa.me/5511914716715?text=Ol%C3%A1,%20quero%20falar%20com%20um%20consultor%20do%20Imobiflow."
