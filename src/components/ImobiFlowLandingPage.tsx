@@ -603,8 +603,8 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 </div>
 
                 <div className="flex items-baseline gap-1">
-                  <span className="text-3xl sm:text-4xl font-serif font-black text-stone-900">R$ 97</span>
-                  <span className="text-xs text-stone-500 font-normal">/mês</span>
+                  <span className="text-3xl sm:text-4xl font-serif font-black text-stone-900">R$ 700</span>
+                  <span className="text-xs text-stone-500 font-normal">em 12x de R$ 58,00</span>
                 </div>
 
                 <p className="text-xs text-stone-600 font-light">
@@ -654,8 +654,8 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 </div>
 
                 <div className="flex items-baseline gap-1">
-                  <span className="text-3xl sm:text-4xl font-serif font-black text-white">R$ 247</span>
-                  <span className="text-xs text-stone-400 font-normal">/mês</span>
+                  <span className="text-3xl sm:text-4xl font-serif font-black text-white">R$ 1.400</span>
+                  <span className="text-xs text-stone-400 font-normal">em 12x de R$ 116,00 até 02 corretores</span>
                 </div>
 
                 <p className="text-xs text-stone-300 font-light">
