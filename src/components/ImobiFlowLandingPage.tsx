@@ -23,8 +23,7 @@ import {
   Star,
   Clock,
   Check,
-  Shield,
-  MessageCircle
+  Shield
 } from 'lucide-react';
 import { Property, Broker } from '../types';
 
@@ -105,11 +104,11 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 border border-amber-400/30"
               >
-                <MessageCircle className="w-4 h-4" />
-                <span>Teste 1 mês grátis no WhatsApp</span>
-                <Zap className="w-3.5 h-3.5 text-amber-200" />
+                <Zap className="w-4 h-4" />
+                <span>Clique e teste 1 mês grátis</span>
+                <Sparkles className="w-3.5 h-3.5 text-amber-200" />
               </a>
 
               <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg backdrop-blur-md">
@@ -163,11 +162,11 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                   href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-sm sm:text-base font-bold px-7 py-4 rounded-xl shadow-xl hover:shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5 border border-emerald-400/30"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-sm sm:text-base font-bold px-7 py-4 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5 border border-amber-400/30"
                 >
-                  <MessageCircle className="w-5 h-5 text-emerald-100" />
-                  <span>Teste 1 mês grátis no WhatsApp</span>
-                  <Zap className="w-4 h-4 text-amber-200" />
+                  <Zap className="w-5 h-5 text-amber-200" />
+                  <span>Clique e teste 1 mês grátis</span>
+                  <Sparkles className="w-4 h-4 text-amber-200" />
                 </a>
               </div>
 
@@ -409,12 +408,12 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
 
               <div className="mt-8 pt-6 border-t border-stone-200">
                 <a
-                  href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20entender%20o%20Modo%20Corretor%20Solo%20do%20Imobiflow."
+                  href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-[#b87b1c] hover:bg-[#a36b17] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all text-center inline-block"
+                  className="w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center inline-block border border-amber-400/30"
                 >
-                  Entenda o Modo Corretor Solo
+                  Clique e teste 1 mês grátis
                 </a>
               </div>
             </div>
@@ -458,12 +457,12 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
 
               <div className="mt-8 pt-6 border-t border-stone-200">
                 <a
-                  href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20entender%20o%20Modo%20Equipe%20do%20Imobiflow."
+                  href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all text-center inline-block"
+                  className="w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center inline-block border border-amber-400/30"
                 >
-                  Entenda o Modo Equipe & Imobiliária
+                  Clique e teste 1 mês grátis
                 </a>
               </div>
             </div>
@@ -633,12 +632,12 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               </div>
 
               <a
-                href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20assinar%20o%20Plano%20Solo%20do%20Imobiflow."
+                href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 w-full bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all text-center inline-block"
+                className="mt-8 w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center inline-block border border-amber-400/30"
               >
-                Assinar Plano Solo
+                Clique e teste 1 mês grátis
               </a>
             </div>
 
@@ -684,12 +683,12 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               </div>
 
               <a
-                href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20assinar%20o%20Plano%20Imobili%C3%A1ria%20do%20Imobiflow."
+                href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl transition-all shadow-md text-center inline-block"
+                className="mt-8 w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center inline-block border border-amber-400/30"
               >
-                Assinar Plano Imobiliária
+                Clique e teste 1 mês grátis
               </a>
             </div>
           </div>
@@ -761,13 +760,13 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
 
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20entender%20como%20cadastrar%20meu%20im%C3%B3vel%20no%20Imobiflow."
+              href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold px-8 py-4 rounded-xl shadow-xl transition-all flex items-center gap-2 border border-amber-400/30"
             >
-              <Sparkles className="w-4 h-4 text-amber-200" />
-              <span>Entenda Como Cadastrar seu Imóvel</span>
+              <Zap className="w-4 h-4 text-amber-200" />
+              <span>Clique e teste 1 mês grátis</span>
             </a>
 
             <a

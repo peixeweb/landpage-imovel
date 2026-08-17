@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, MapPin, Building, Sparkles, PlusCircle, ArrowRight, Bot, Zap, CheckCircle2, Shield, MessageCircle } from 'lucide-react';
+import { Search, MapPin, Building, Sparkles, PlusCircle, ArrowRight, Bot, Zap, CheckCircle2, Shield } from 'lucide-react';
 import { OperationType, PropertyType, PropertyFilters } from '../types';
 
 interface HeroSectionProps {
@@ -37,11 +37,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
             href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 border border-amber-400/30"
           >
-            <MessageCircle className="w-4 h-4" />
-            <span>Teste 1 mês grátis no WhatsApp</span>
-            <Zap className="w-3.5 h-3.5 text-amber-200" />
+            <Zap className="w-4 h-4" />
+            <span>Clique e teste 1 mês grátis</span>
+            <Sparkles className="w-3.5 h-3.5 text-amber-200" />
           </a>
 
           {/* Badge */}
