@@ -32,18 +32,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
         }}
       >
         <div className="max-w-4xl mx-auto text-white space-y-5 animate-fade-in z-10">
-          {/* CTA WhatsApp - Above Badge */}
-          <a
-            href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 border border-amber-400/30"
-          >
-            <Zap className="w-4 h-4" />
-            <span>Clique e teste 1 mês grátis</span>
-            <Sparkles className="w-3.5 h-3.5 text-amber-200" />
-          </a>
-
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-emerald-500/20 backdrop-blur-md border border-emerald-400/50 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg">
             <Shield className="w-4 h-4 text-emerald-400" />
@@ -93,11 +81,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
           </div>
 
           {/* CTA Buttons */}
-          <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
+          <div className="pt-3 flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-md mx-auto">
+            <a
+              href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 border border-amber-400/30"
+            >
+              <Zap className="w-4 h-4" />
+              <span>Clique e teste 1 mês grátis</span>
+              <Sparkles className="w-3.5 h-3.5 text-amber-200" />
+            </a>
             <button
               id="btn-hero-explore-cta"
               onClick={onExploreClick}
-              className="bg-white/15 hover:bg-white/25 text-white border border-white/30 text-xs sm:text-sm font-semibold px-6 py-3.5 rounded-xl transition-all backdrop-blur-xs cursor-pointer flex items-center gap-2"
+              className="flex-1 flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white border border-white/30 text-xs sm:text-sm font-semibold px-6 py-3.5 rounded-xl transition-all backdrop-blur-xs cursor-pointer"
             >
               <span>Ver demonstração ao vivo</span>
               <ArrowRight className="w-4 h-4" />
