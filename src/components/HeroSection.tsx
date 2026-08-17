@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import { Search, MapPin, Building, Sparkles, PlusCircle, ArrowRight, Bot, Zap, CheckCircle2, Shield } from 'lucide-react';
+import { Search, MapPin, Building, Sparkles, PlusCircle, ArrowRight, Bot, Zap, CheckCircle2, Shield, MessageCircle } from 'lucide-react';
 import { OperationType, PropertyType, PropertyFilters } from '../types';
 
 interface HeroSectionProps {
   onSearch: (filters: PropertyFilters) => void;
   onExploreClick: () => void;
-  onOpenRegisterModal?: () => void;
 }
 
-export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreClick, onOpenRegisterModal }) => {
+export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreClick }) => {
   const [operation, setOperation] = useState<OperationType | 'Todos'>('Venda');
   const [type, setType] = useState<PropertyType | 'Todos'>('Todos');
   const [neighborhood, setNeighborhood] = useState<string>('');
@@ -33,6 +32,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
         }}
       >
         <div className="max-w-4xl mx-auto text-white space-y-5 animate-fade-in z-10">
+          {/* CTA WhatsApp - Above Badge */}
+          <a
+            href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+          >
+            <MessageCircle className="w-4 h-4" />
+            <span>Teste 1 mês grátis no WhatsApp</span>
+            <Zap className="w-3.5 h-3.5 text-amber-200" />
+          </a>
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-emerald-500/20 backdrop-blur-md border border-emerald-400/50 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg">
             <Shield className="w-4 h-4 text-emerald-400" />
@@ -83,18 +94,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
 
           {/* CTA Buttons */}
           <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
-            {onOpenRegisterModal && (
-              <button
-                id="btn-hero-register-cta"
-                onClick={onOpenRegisterModal}
-                className="bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2 cursor-pointer"
-              >
-                <Zap className="w-4 h-4" />
-                <span>Teste 1 mês grátis</span>
-                <Sparkles className="w-3.5 h-3.5 text-amber-200" />
-              </button>
-            )}
-
             <button
               id="btn-hero-explore-cta"
               onClick={onExploreClick}

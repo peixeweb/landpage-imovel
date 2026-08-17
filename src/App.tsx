@@ -128,7 +128,6 @@ export default function App() {
         ) : (
           /* PURE PRODUCT LANDING PAGE */
           <ImobiFlowLandingPage
-            onOpenRegisterModal={() => setIsRegisterModalOpen(true)}
             onOpenDemoChat={() => setIsAIValidationModalOpen(true)}
             sampleProperty={defaultSampleProperty}
             sampleBroker={defaultSampleBroker}

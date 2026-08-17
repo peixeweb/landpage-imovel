@@ -23,12 +23,12 @@ import {
   Star,
   Clock,
   Check,
-  Shield
+  Shield,
+  MessageCircle
 } from 'lucide-react';
 import { Property, Broker } from '../types';
 
 interface ImobiFlowLandingPageProps {
-  onOpenRegisterModal: () => void;
   onOpenDemoChat: (property?: Property) => void;
   sampleProperty: Property;
   sampleBroker: Broker;
@@ -36,7 +36,6 @@ interface ImobiFlowLandingPageProps {
 }
 
 export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
-  onOpenRegisterModal,
   onOpenDemoChat,
   sampleProperty,
   sampleBroker,
@@ -101,6 +100,18 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+              {/* CTA WhatsApp - Above Badge */}
+              <a
+                href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>Teste 1 mês grátis no WhatsApp</span>
+                <Zap className="w-3.5 h-3.5 text-amber-200" />
+              </a>
+
               <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg backdrop-blur-md">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 <span>Corretores fecham 3x mais respondendo em até 5 min — sua IA faz isso 24/7</span>
@@ -148,13 +159,16 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
 
               {/* CTAs */}
               <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4">
-                <button
-                  onClick={onOpenRegisterModal}
-                  className="bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-sm sm:text-base font-bold px-7 py-4 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5 cursor-pointer border border-amber-400/30"
+                <a
+                  href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Quero%20testar%20o%20Imobiflow%20por%201%20m%C3%AAs%20gr%C3%A1tis."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white text-sm sm:text-base font-bold px-7 py-4 rounded-xl shadow-xl hover:shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5 border border-emerald-400/30"
                 >
-                  <Zap className="w-5 h-5 text-amber-200" />
-                  <span>Teste 1 mês grátis</span>
-                </button>
+                  <MessageCircle className="w-5 h-5 text-emerald-100" />
+                  <span>Teste 1 mês grátis no WhatsApp</span>
+                  <Zap className="w-4 h-4 text-amber-200" />
+                </a>
               </div>
 
               {/* Guarantee Strip */}
