@@ -254,7 +254,7 @@ export const PropertyLandingPage: React.FC<PropertyLandingPageProps> = ({
               <div className="bg-gradient-to-br from-amber-50 to-orange-50/40 rounded-2xl p-6 border border-amber-200 shadow-2xs space-y-3">
                 <div className="flex items-center gap-2 text-amber-900 font-bold text-sm sm:text-base">
                   <Sparkles className="w-4 h-4 text-amber-600" />
-                  <span>Destaques da Inteligência Artificial peixeweb</span>
+                  <span>Destaques da Inteligência Artificial Imobiflow</span>
                 </div>
                 <ul className="space-y-2 text-xs sm:text-sm text-stone-800">
                   {property.aiHighlights.map((hl, idx) => (

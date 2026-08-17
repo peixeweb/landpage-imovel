@@ -20,7 +20,7 @@ export const AIValidationExplanationModal: React.FC<AIValidationExplanationModal
         <div className="bg-gradient-to-r from-stone-950 via-[#3d2211] to-[#6b3e1f] text-white p-5 sm:p-6 flex items-center justify-between">
           <div className="flex items-center gap-3.5">
             <div className="w-12 h-12 rounded-2xl bg-stone-950 border border-amber-500/40 p-0.5 overflow-hidden flex items-center justify-center shadow-lg shrink-0">
-              <img src={logoImg} alt="peixeweb" referrerPolicy="no-referrer" className="w-full h-full object-cover rounded-[10px]" />
+              <img src={logoImg} alt="Imobiflow" referrerPolicy="no-referrer" className="w-full h-full object-cover rounded-[10px]" />
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -51,7 +51,7 @@ export const AIValidationExplanationModal: React.FC<AIValidationExplanationModal
           <div className="bg-amber-50/80 border border-amber-200 rounded-2xl p-4 text-xs sm:text-sm text-amber-950 flex items-start gap-3">
             <Bot className="w-5 h-5 text-[#b87b1c] shrink-0 mt-0.5" />
             <p className="leading-relaxed">
-              O Atendente com Inteligência Artificial do <strong>peixeweb</strong> conversa com cada visitante da Landing Page do imóvel 24 horas por dia, realizando a validação completa antes de enviar o contato para você.
+              O Atendente com Inteligência Artificial do <strong>Imobiflow</strong> conversa com cada visitante da Landing Page do imóvel 24 horas por dia, realizando a validação completa antes de enviar o contato para você.
             </p>
           </div>
 
@@ -126,7 +126,7 @@ export const AIValidationExplanationModal: React.FC<AIValidationExplanationModal
             </div>
 
             <a
-              href="https://wa.me/5511914716715?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20valida%C3%A7%C3%A3o%20de%20clientes%20com%20IA%20do%20peixeweb."
+              href="https://wa.me/5511914716715?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20a%20valida%C3%A7%C3%A3o%20de%20clientes%20com%20IA%20do%20Imobiflow."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#6b3e1f] hover:bg-[#573117] text-white font-bold px-4 py-2 rounded-xl transition-colors flex items-center gap-1.5 shadow-xs shrink-0"

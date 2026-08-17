@@ -334,7 +334,7 @@ export const BrokerDashboard: React.FC<BrokerDashboardProps> = ({
                             </button>
 
                             <a
-                              href={`https://wa.me/${lead.phone.replace(/\D/g, '')}?text=${encodeURIComponent(`Olá ${lead.name}, sou o corretor responsável pelo imóvel ${lead.propertyCode} (${lead.propertyTitle}) na peixeweb. Vi que você interagiu com nosso assistente virtual. Como podemos agendar sua visita?`)}`}
+                              href={`https://wa.me/${lead.phone.replace(/\D/g, '')}?text=${encodeURIComponent(`Olá ${lead.name}, sou o corretor responsável pelo imóvel ${lead.propertyCode} (${lead.propertyTitle}) na Imobiflow. Vi que você interagiu com nosso assistente virtual. Como podemos agendar sua visita?`)}`}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="p-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white transition-colors"
@@ -486,7 +486,7 @@ export const BrokerDashboard: React.FC<BrokerDashboardProps> = ({
                       }`}
                     >
                       <span className="font-bold block text-[10px] opacity-80">
-                        {msg.sender === 'user' ? 'Cliente' : 'Assistente IA peixeweb'}:
+                        {msg.sender === 'user' ? 'Cliente' : 'Assistente IA Imobiflow'}:
                       </span>
                       <p className="whitespace-pre-line mt-0.5">{msg.text}</p>
                     </div>

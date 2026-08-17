@@ -22,7 +22,7 @@ export const BrokerRegisterModal: React.FC<BrokerRegisterModalProps> = ({
         <div className="bg-gradient-to-r from-stone-950 via-stone-900 to-[#b87b1c] text-white p-5 sm:p-6 flex items-center justify-between">
           <div className="flex items-center gap-3.5">
             <div className="w-12 h-12 rounded-2xl bg-stone-950 border border-amber-500/40 p-0.5 overflow-hidden flex items-center justify-center shadow-lg shrink-0">
-              <img src={logoImg} alt="peixeweb" referrerPolicy="no-referrer" className="w-full h-full object-cover rounded-[10px]" />
+              <img src={logoImg} alt="Imobiflow" referrerPolicy="no-referrer" className="w-full h-full object-cover rounded-[10px]" />
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -34,7 +34,7 @@ export const BrokerRegisterModal: React.FC<BrokerRegisterModalProps> = ({
                 </span>
               </div>
               <p className="text-xs text-stone-300">
-                Entenda o fluxo 100% automatizado da plataforma peixeweb
+                Entenda o fluxo 100% automatizado da plataforma Imobiflow
               </p>
             </div>
           </div>
@@ -53,7 +53,7 @@ export const BrokerRegisterModal: React.FC<BrokerRegisterModalProps> = ({
           <div className="bg-amber-50 border border-amber-200/80 rounded-2xl p-4 text-xs sm:text-sm text-amber-950 flex items-start gap-3">
             <Sparkles className="w-5 h-5 text-[#b87b1c] shrink-0 mt-0.5" />
             <p className="leading-relaxed">
-              Você não precisa preencher formulários complexos. Com o <strong>peixeweb</strong>, cadastrar seu imóvel e colocá-lo no ar com atendimento inteligente é um processo ágil dividido em 4 etapas:
+              Você não precisa preencher formulários complexos. Com o <strong>Imobiflow</strong>, cadastrar seu imóvel e colocá-lo no ar com atendimento inteligente é um processo ágil dividido em 4 etapas:
             </p>
           </div>
 
@@ -145,7 +145,7 @@ export const BrokerRegisterModal: React.FC<BrokerRegisterModalProps> = ({
             </div>
 
             <a
-              href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20como%20cadastrar%20im%C3%B3veis%20no%20peixeweb."
+              href="https://wa.me/5511914716715?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20como%20cadastrar%20im%C3%B3veis%20no%20Imobiflow."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all flex items-center gap-2 shrink-0 shadow-md"

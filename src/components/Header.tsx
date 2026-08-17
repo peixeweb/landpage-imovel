@@ -39,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
           <div className="flex items-center gap-2 text-amber-400 font-medium">
             <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-            <span className="font-semibold">peixeweb • PropTech com Inteligência Artificial</span>
+            <span className="font-semibold">Imobiflow • PropTech com Inteligência Artificial</span>
           </div>
 
           <div className="hidden md:flex items-center gap-4 text-stone-400 text-[11px]">
@@ -51,7 +51,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           <a 
-            href="https://wa.me/5511914716715?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20peixeweb%20para%20corretores." 
+            href="https://wa.me/5511914716715?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Imobiflow%20para%20corretores." 
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-amber-400 transition-colors text-stone-300 text-xs"

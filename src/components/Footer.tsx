@@ -87,7 +87,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRegisterModal, onOpenDemoC
               </p>
               <div className="pt-2 flex flex-col gap-2">
                 <a 
-                  href="https://wa.me/5511914716715?text=Ol%C3%A1,%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20peixeweb." 
+                  href="https://wa.me/5511914716715?text=Ol%C3%A1,%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20Imobiflow." 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-stone-300 hover:text-emerald-400 transition-colors bg-stone-900 p-2 rounded-xl border border-stone-800"
@@ -102,7 +102,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRegisterModal, onOpenDemoC
 
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-400">
-          <p>© {new Date().getFullYear()} peixeweb. Todos os direitos reservados.</p>
+          <p>© 2026 PEIXEWEB AGÊNCIA DIGITAL. TODOS OS DIREITOS RESERVADOS.</p>
           
           <div className="flex items-center gap-4 text-stone-400">
             <button 
@@ -127,11 +127,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRegisterModal, onOpenDemoC
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-xs flex items-center justify-center p-4">
           <div className="bg-white text-stone-800 rounded-2xl max-w-2xl w-full p-6 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
             <div className="flex items-center justify-between border-b border-stone-200 pb-3">
-              <h3 className="text-lg font-serif font-bold text-stone-900">Política de Privacidade — peixeweb</h3>
+              <h3 className="text-lg font-serif font-bold text-stone-900">Política de Privacidade — Imobiflow</h3>
               <button onClick={() => setShowPrivacyModal(false)} className="text-stone-400 hover:text-stone-800 font-bold">✕</button>
             </div>
             <div className="text-xs space-y-3 leading-relaxed text-stone-600">
-              <p>O peixeweb preza pela total segurança e confidencialidade dos dados de corretores, imobiliárias e compradores.</p>
+              <p>O Imobiflow preza pela total segurança e confidencialidade dos dados de corretores, imobiliárias e compradores.</p>
               <p><strong>1. Coleta de Dados:</strong> Coletamos apenas as informações fornecidas voluntariamente no cadastro de imóveis e no atendimento automatizado (nome, telefone, renda declarada e dúvidas sobre o imóvel).</p>
               <p><strong>2. Uso das Informações:</strong> As informações são utilizadas exclusivamente para viabilizar a qualificação do lead e o contato direto entre o comprador e o corretor responsável.</p>
               <p><strong>3. Proteção e Segurança:</strong> Empregamos avançados protocolos de segurança, criptografia de ponta a ponta e rígidas políticas de proteção de dados para garantir que nenhuma informação seja compartilhada com terceiros.</p>
@@ -148,14 +148,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenRegisterModal, onOpenDemoC
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-xs flex items-center justify-center p-4">
           <div className="bg-white text-stone-800 rounded-2xl max-w-2xl w-full p-6 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
             <div className="flex items-center justify-between border-b border-stone-200 pb-3">
-              <h3 className="text-lg font-serif font-bold text-stone-900">Termos de Uso — peixeweb</h3>
+              <h3 className="text-lg font-serif font-bold text-stone-900">Termos de Uso — Imobiflow</h3>
               <button onClick={() => setShowTermsModal(false)} className="text-stone-400 hover:text-stone-800 font-bold">✕</button>
             </div>
             <div className="text-xs space-y-3 leading-relaxed text-stone-600">
-              <p>Ao utilizar o peixeweb, o usuário concorda com os seguintes termos:</p>
+              <p>Ao utilizar o Imobiflow, o usuário concorda com os seguintes termos:</p>
               <p><strong>1. Responsabilidade do Anúncio:</strong> A exatidão das informações, valores, metragens e documentação do imóvel é de exclusiva responsabilidade do corretor ou da imobiliária cadastrada.</p>
               <p><strong>2. Atendimento com IA:</strong> O assistente virtual é uma ferramenta de triagem prévia e cálculo estimado de escore de renda, não substituindo a análise bancária formal de crédito.</p>
-              <p><strong>3. Disponibilidade do Serviço:</strong> O peixeweb busca manter 99.9% de uptime nas Landing Pages e nos canais de redirecionamento para o WhatsApp.</p>
+              <p><strong>3. Disponibilidade do Serviço:</strong> O Imobiflow busca manter 99.9% de uptime nas Landing Pages e nos canais de redirecionamento para o WhatsApp.</p>
             </div>
             <button onClick={() => setShowTermsModal(false)} className="w-full bg-stone-900 text-white font-semibold py-2.5 rounded-xl text-xs cursor-pointer">
               Entendido

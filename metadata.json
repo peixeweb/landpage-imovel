@@ -1,5 +1,5 @@
 {
-  "name": "peixeweb - Landing Pages com IA & Qualificação de Leads",
+  "name": "Imobiflow - Landing Pages com IA & Qualificação de Leads",
   "description": "Plataforma para corretores autônomos e imobiliárias gerarem Landing Pages com IA instantânea e agente virtual 24/7 que qualifica leads de compra e locação.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

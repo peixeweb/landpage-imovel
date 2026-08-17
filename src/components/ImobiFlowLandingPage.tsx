@@ -157,7 +157,7 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                     </div>
                     <div>
                       <div className="flex items-center gap-1.5">
-                        <span className="text-xs font-bold text-white">Atendente IA peixeweb</span>
+                        <span className="text-xs font-bold text-white">Atendente IA Imobiflow</span>
                         <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                       </div>
                       <p className="text-[11px] text-stone-400">Qualificando lead em tempo real...</p>
@@ -171,7 +171,7 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 {/* Simulated Chat bubble sequence */}
                 <div className="space-y-3 bg-stone-950/60 p-4 rounded-2xl border border-stone-800 text-xs mb-4">
                   <div className="bg-stone-800/90 p-3 rounded-xl rounded-tl-none border border-stone-700 shadow-2xs text-stone-200 space-y-1">
-                    <p className="font-semibold text-amber-300">IA peixeweb:</p>
+                    <p className="font-semibold text-amber-300">IA Imobiflow:</p>
                     <p>Olá Carlos! Vi que você se interessou pelo apartamento no Noroeste ({sampleProperty.code}). Para agilizar sua visita, qual sua faixa de renda familiar mensal?</p>
                   </div>
 
@@ -228,7 +228,7 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               <span>O Fluxo Operacional</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-black text-stone-900">
-              Como o peixeweb funciona para você
+              Como o Imobiflow funciona para você
             </h2>
             <p className="text-xs sm:text-sm text-stone-600 font-light">
               4 passos simples e automatizados para multiplicar sua taxa de conversão imobiliária.
@@ -654,7 +654,7 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               Perguntas Frequentes (FAQ)
             </h2>
             <p className="text-xs sm:text-sm text-stone-500 font-light">
-              Tire suas dúvidas sobre como o peixeweb potencializa sua rotina.
+              Tire suas dúvidas sobre como o Imobiflow potencializa sua rotina.
             </p>
           </div>
 
@@ -706,7 +706,7 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
           </h2>
 
           <p className="text-xs sm:text-sm text-stone-300 font-light max-w-xl mx-auto drop-shadow-xs">
-            Cadastre seu primeiro imóvel agora mesmo e veja como o peixeweb transforma visualizações em propostas reais de compra.
+            Cadastre seu primeiro imóvel agora mesmo e veja como o Imobiflow transforma visualizações em propostas reais de compra.
           </p>
 
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
@@ -719,7 +719,7 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
             </button>
 
             <a
-              href="https://wa.me/5511914716715?text=Ol%C3%A1,%20quero%20falar%20com%20um%20consultor%20do%20peixeweb."
+              href="https://wa.me/5511914716715?text=Ol%C3%A1,%20quero%20falar%20com%20um%20consultor%20do%20Imobiflow."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-stone-900/90 hover:bg-stone-800 text-white border border-stone-700 text-xs sm:text-sm font-semibold px-6 py-4 rounded-xl transition-all flex items-center gap-2 backdrop-blur-md"

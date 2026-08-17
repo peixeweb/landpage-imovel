@@ -13,14 +13,14 @@ export const BrokersSection: React.FC<BrokersSectionProps> = ({ brokers }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="text-center space-y-1 mb-12">
           <div className="inline-flex items-center gap-1.5 bg-amber-100 text-[#b87b1c] text-xs font-bold uppercase tracking-wider px-3 py-0.5 rounded-full mb-2">
-            <span>Rede peixeweb</span>
+            <span>Rede Imobiflow</span>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-black text-stone-900">
             Corretores & Imobiliárias Cadastradas
           </h2>
           <div className="w-12 h-0.5 bg-[#b87b1c] mx-auto my-2"></div>
           <p className="text-xs sm:text-sm text-stone-500 font-light max-w-xl mx-auto">
-            Profissionais autônomos e imobiliárias que utilizam o peixeweb para publicar Landing Pages com IA e qualificar leads em tempo recorde.
+            Profissionais autônomos e imobiliárias que utilizam o Imobiflow para publicar Landing Pages com IA e qualificar leads em tempo recorde.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export const BrokersSection: React.FC<BrokersSectionProps> = ({ brokers }) => {
                 </a>
 
                 <a
-                  href={`https://wa.me/${broker.whatsapp}?text=${encodeURIComponent(`Olá ${broker.name}, gostaria de informações sobre imóveis através da plataforma peixeweb.`)}`}
+                  href={`https://wa.me/${broker.whatsapp}?text=${encodeURIComponent(`Olá ${broker.name}, gostaria de informações sobre imóveis através da plataforma Imobiflow.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-full bg-emerald-50 hover:bg-emerald-100 text-emerald-600 hover:text-emerald-800 flex items-center justify-center transition-colors border border-emerald-200"

@@ -36,7 +36,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-md border border-amber-400/50 text-amber-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg">
             <Bot className="w-4 h-4 text-amber-400" />
-            <span>peixeweb • Landing Pages com IA para Corretores & Imobiliárias</span>
+            <span>Imobiflow • Landing Pages com IA para Corretores & Imobiliárias</span>
           </div>
 
           {/* Main Headline */}
@@ -101,7 +101,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-100 pb-3.5 mb-4">
             <div className="flex items-center gap-2">
               <span className="text-sm sm:text-base font-bold text-stone-900">
-                Portal de Imóveis peixeweb
+                Portal de Imóveis Imobiflow
               </span>
               <span className="text-[11px] bg-stone-100 text-stone-600 px-2 py-0.5 rounded font-medium">
                 Páginas com Atendimento IA Ativo

@@ -13,7 +13,7 @@ import { Sparkles, X } from 'lucide-react';
 export default function App() {
   // Application Data States
   const [properties, setProperties] = useState<Property[]>(() => {
-    const saved = localStorage.getItem('peixeweb_properties');
+    const saved = localStorage.getItem('Imobiflow_properties');
     if (saved) {
       try { return JSON.parse(saved); } catch (e) { /* ignore */ }
     }
@@ -35,7 +35,7 @@ export default function App() {
 
   // Persist properties
   useEffect(() => {
-    localStorage.setItem('peixeweb_properties', JSON.stringify(properties));
+    localStorage.setItem('Imobiflow_properties', JSON.stringify(properties));
   }, [properties]);
 
   const showToast = (msg: string) => {
@@ -69,7 +69,7 @@ export default function App() {
   const defaultSampleBroker = getResponsibleBroker(defaultSampleProperty);
 
   return (
-    <div id="peixeweb-landing-app" className="min-h-screen bg-[#faf9f6] flex flex-col font-sans text-stone-850 selection:bg-amber-200 selection:text-amber-900">
+    <div id="Imobiflow-landing-app" className="min-h-screen bg-[#faf9f6] flex flex-col font-sans text-stone-850 selection:bg-amber-200 selection:text-amber-900">
       {/* Toast Notification */}
       {toastMessage && (
         <div className="fixed top-20 right-4 z-50 bg-stone-900 text-white border border-amber-500/40 rounded-xl shadow-2xl p-4 flex items-center gap-3 animate-fade-in max-w-md">
@@ -110,7 +110,7 @@ export default function App() {
                 }}
                 className="bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-lg text-xs font-semibold cursor-pointer transition-colors"
               >
-                ← Voltar para a Apresentação do peixeweb
+                ← Voltar para a Apresentação do Imobiflow
               </button>
             </div>
 

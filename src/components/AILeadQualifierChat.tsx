@@ -28,7 +28,7 @@ export const AILeadQualifierChat: React.FC<AILeadQualifierChatProps> = ({
 
   // Initialize conversation
   useEffect(() => {
-    const welcomeText = `Olá! Sou a Corretora Virtual com IA do peixeweb para o imóvel ${property.code} (${property.title}). 
+    const welcomeText = `Olá! Sou a Corretora Virtual com IA do Imobiflow para o imóvel ${property.code} (${property.title}). 
 Como posso te ajudar hoje? Posso tirar dúvidas sobre condomínio, vaga de garagem, regras de financiamento bancário ou agendar uma visita presencial!`;
 
     setMessages([
@@ -190,7 +190,7 @@ Como posso te ajudar hoje? Posso tirar dúvidas sobre condomínio, vaga de garag
 🎯 *Status IA:* ${currentQualification?.score || 'Qualificado'}
 📋 *Resumo:* ${summary}
 
-Acesse o painel do corretor peixeweb para ver a transcrição completa.`;
+Acesse o painel do corretor Imobiflow para ver a transcrição completa.`;
 
     return `https://wa.me/${brokerPhone}?text=${encodeURIComponent(message)}`;
   };
@@ -206,7 +206,7 @@ Acesse o painel do corretor peixeweb para ver a transcrição completa.`;
       <div className="bg-gradient-to-r from-stone-900 via-stone-800 to-[#b87b1c] text-white p-4 flex items-center justify-between shadow-xs">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-stone-950 border border-amber-400/40 p-0.5 overflow-hidden flex items-center justify-center shrink-0">
-            <img src={logoImg} alt="peixeweb" referrerPolicy="no-referrer" className="w-full h-full object-cover rounded-[8px]" />
+            <img src={logoImg} alt="Imobiflow" referrerPolicy="no-referrer" className="w-full h-full object-cover rounded-[8px]" />
           </div>
           <div>
             <div className="flex items-center gap-2">

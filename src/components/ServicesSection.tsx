@@ -60,11 +60,11 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-amber-500/15 border border-amber-500/30 text-amber-900 px-4 py-1 rounded-full text-xs font-bold tracking-wide">
             <Bot className="w-3.5 h-3.5 text-[#b87b1c]" />
-            <span>Guia Operacional peixeweb para Corretores & Imobiliárias</span>
+            <span>Guia Operacional Imobiflow para Corretores & Imobiliárias</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-black text-stone-900 leading-tight">
-            Como Funciona o <span className="text-[#b87b1c]">peixeweb</span>
+            Como Funciona o <span className="text-[#b87b1c]">Imobiflow</span>
           </h2>
           <div className="w-16 h-1 bg-[#b87b1c] mx-auto rounded-full"></div>
           <p className="text-sm sm:text-base text-stone-600 font-light leading-relaxed">
@@ -233,7 +233,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 Dois Modos de Operação Flexíveis
               </h3>
               <p className="text-xs sm:text-sm text-stone-600 font-light">
-                O peixeweb se adapta perfeitamente tanto ao corretor que atua sozinho quanto à imobiliária com dezenas de corretores no plantão.
+                O Imobiflow se adapta perfeitamente tanto ao corretor que atua sozinho quanto à imobiliária com dezenas de corretores no plantão.
               </p>
             </div>
 
@@ -413,7 +413,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
               {/* Official Table */}
               <div className="lg:col-span-7 bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-xs">
                 <div className="p-4 bg-stone-900 text-white flex items-center justify-between">
-                  <span className="text-xs font-bold uppercase tracking-wider">Matriz de Qualificação peixeweb</span>
+                  <span className="text-xs font-bold uppercase tracking-wider">Matriz de Qualificação Imobiflow</span>
                   <span className="text-[11px] bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded font-mono">Padrão Sistema</span>
                 </div>
 

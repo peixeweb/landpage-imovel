@@ -9,19 +9,19 @@ export const INITIAL_BROKERS: Broker[] = [
     creci: '28410-DF',
     phone: '(11) 91471-6715',
     whatsapp: '5511914716715',
-    email: 'adriana.silva@peixeweb.app',
+    email: 'adriana.silva@Imobiflow.app',
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
   },
   {
     id: 'broker-2',
-    name: 'peixeweb Prime Imóveis',
+    name: 'Imobiflow Prime Imóveis',
     role: 'Imobiliária Credenciada',
     type: 'Imobiliária',
-    agencyName: 'peixeweb Prime Negócios Imobiliários',
+    agencyName: 'Imobiflow Prime Negócios Imobiliários',
     creci: '24105-J',
     phone: '(11) 91471-6715',
     whatsapp: '5511914716715',
-    email: 'atendimento@peixeweb.app',
+    email: 'atendimento@Imobiflow.app',
     avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80',
   },
   {
@@ -32,7 +32,7 @@ export const INITIAL_BROKERS: Broker[] = [
     creci: '26387-DF',
     phone: '(11) 91471-6715',
     whatsapp: '5511914716715',
-    email: 'helio@peixeweb.app',
+    email: 'helio@Imobiflow.app',
     avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80',
   },
   {
@@ -44,7 +44,7 @@ export const INITIAL_BROKERS: Broker[] = [
     creci: '11559-DF',
     phone: '(11) 91471-6715',
     whatsapp: '5511914716715',
-    email: 'regina@peixeweb.app',
+    email: 'regina@Imobiflow.app',
     avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80',
   },
 ];
@@ -444,7 +444,7 @@ export const INITIAL_LEADS: Lead[] = [
       budgetEstimated: 'R$ 750.000 a R$ 850.000',
       hasPreApprovedCredit: true,
       preferredContactTime: 'Manhã / WhatsApp',
-      summaryForBroker: 'Lead de altíssima conversão gerado pela Landing Page peixeweb. Família com 3 filhos buscando casa espaçosa com piscina em condomínio fechado. Carta de crédito de R$ 800 mil pronta no Santander. Agendou visita para sábado 22/08 às 10h.',
+      summaryForBroker: 'Lead de altíssima conversão gerado pela Landing Page Imobiflow. Família com 3 filhos buscando casa espaçosa com piscina em condomínio fechado. Carta de crédito de R$ 800 mil pronta no Santander. Agendou visita para sábado 22/08 às 10h.',
       nextStepsSuggested: [
         'Confirmar agendamento de visita no condomínio para sábado às 10h',
         'Enviar mapa e ponto de encontro no WhatsApp',
@@ -452,7 +452,7 @@ export const INITIAL_LEADS: Lead[] = [
       ],
     },
     conversationHistory: [
-      { id: 'm-1', sender: 'ai', text: 'Olá! Sou o Assistente IA do peixeweb para esta linda Casa de 6 quartos em Vicente Pires. Como posso te ajudar hoje?', timestamp: '09:30' },
+      { id: 'm-1', sender: 'ai', text: 'Olá! Sou o Assistente IA do Imobiflow para esta linda Casa de 6 quartos em Vicente Pires. Como posso te ajudar hoje?', timestamp: '09:30' },
       { id: 'm-2', sender: 'user', text: 'Boa tarde, a casa aceita financiamento? Tenho uma carta de consórcio aprovada de 800 mil.', timestamp: '09:31' },
       { id: 'm-3', sender: 'ai', text: 'Excelente notícia! A casa possui documentação com cadeia dominial completa e aceita carta de consórcio ou proposta. Qual o seu nome e WhatsApp para te enviar a pasta completa do imóvel?', timestamp: '09:32' },
       { id: 'm-4', sender: 'user', text: 'Carlos Mendes, meu zap é 61 98112-9090. Gostaria de visitar sábado.', timestamp: '09:33' },
@@ -486,7 +486,7 @@ export const INITIAL_LEADS: Lead[] = [
       ],
     },
     conversationHistory: [
-      { id: 'm-1', sender: 'ai', text: 'Olá! Sou o Assistente IA do peixeweb. Como posso te auxiliar com os detalhes desta Kitnet no SEPS 713/913 Asa Sul?', timestamp: '15:15' },
+      { id: 'm-1', sender: 'ai', text: 'Olá! Sou o Assistente IA do Imobiflow. Como posso te auxiliar com os detalhes desta Kitnet no SEPS 713/913 Asa Sul?', timestamp: '15:15' },
       { id: 'm-2', sender: 'user', text: 'Qual o valor médio que consigo de aluguel nela se comprar?', timestamp: '15:16' },
       { id: 'm-3', sender: 'ai', text: 'Em média R$ 2.200 a R$ 2.500/mês para locação tradicional mobiliada, ou cerca de R$ 3.400 em plataformas por temporada. Qual seu nome e contato para te passarmos a planilha de retorno?', timestamp: '15:17' },
       { id: 'm-4', sender: 'user', text: 'Mariana, zap 61 99344-1234. Tenho 180k de entrada.', timestamp: '15:18' },

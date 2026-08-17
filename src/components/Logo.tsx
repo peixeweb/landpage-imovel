@@ -49,7 +49,7 @@ export const Logo: React.FC<LogoProps> = ({
       <div className={`${currentSize.img} rounded-xl overflow-hidden shadow-md shrink-0 border border-stone-800 bg-stone-950 flex items-center justify-center p-0.5 group-hover:scale-105 transition-transform`}>
         <img
           src={logoImg}
-          alt="peixeweb Logo"
+          alt="Imobiflow Logo"
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover rounded-[9px]"
         />
@@ -59,7 +59,7 @@ export const Logo: React.FC<LogoProps> = ({
       <div>
         <div className="flex items-center gap-1.5 leading-none">
           <span className={`font-serif font-black tracking-tight ${currentSize.title} ${theme === 'dark' ? 'text-white' : 'text-stone-950'}`}>
-            peixe<span className="text-[#b87b1c]">web</span>
+            Imobi<span className="text-[#b87b1c]">flow</span>
           </span>
           <span className={`${currentSize.badge} uppercase tracking-wider font-bold rounded-full ${
             theme === 'dark'
