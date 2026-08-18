@@ -86,14 +86,15 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
       {/* 1. HERO SECTION WITH BROKER BACKGROUND IMAGE */}
       <section 
         id="hero-section" 
+        aria-labelledby="hero-title-main"
         className="relative overflow-hidden pt-12 pb-20 md:pt-18 md:pb-28 border-b border-stone-800 bg-stone-950 text-white bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(135deg, rgba(12, 10, 9, 0.93) 0%, rgba(28, 25, 23, 0.88) 45%, rgba(12, 10, 9, 0.85) 100%), url('/leadvalidado/fundo-sampa.webp')`,
         }}
       >
         {/* Subtle decorative glow overlays */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -105,18 +106,19 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 border border-amber-400/30"
+                aria-label="Testar Imobiflow grátis por 1 mês no WhatsApp"
               >
-                <Zap className="w-4 h-4" />
+                <Zap className="w-4 h-4" aria-hidden="true" />
                 <span>Clique e teste 1 mês grátis</span>
-                <Sparkles className="w-3.5 h-3.5 text-amber-200" />
+                <Sparkles className="w-3.5 h-3.5 text-amber-200" aria-hidden="true" />
               </a>
 
-              <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg backdrop-blur-md">
-                <ShieldCheck className="w-4 h-4 text-emerald-400" />
+              <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg backdrop-blur-md" role="status" aria-live="polite">
+                <ShieldCheck className="w-4 h-4 text-emerald-400" aria-hidden="true" />
                 <span>Corretores fecham 3x mais respondendo em até 5 min — sua IA faz isso 24/7</span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-black tracking-tight text-white leading-[1.12] drop-shadow-md">
+              <h1 id="hero-title-main" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-black tracking-tight text-white leading-[1.12] drop-shadow-md">
                 Pare de perder leads para quem responde rápido. <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400">Sua IA qualifica e entrega no WhatsApp</span> enquanto você atende visitas.
               </h1>
 
@@ -125,33 +127,33 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               </p>
 
               {/* Social Proof Bar */}
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-xs text-stone-300 border-t border-white/20 px-4 py-2">
-                <span className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-xs text-stone-300 border-t border-white/20 px-4 py-2" role="list" aria-label="Prova social e métricas do Imobiflow">
+                <span className="flex items-center gap-1.5" role="listitem">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" aria-hidden="true" />
                   <strong>+2.800</strong> leads qualificados este mês
                 </span>
-                <span className="flex items-center gap-1.5">
-                  <Zap className="w-3.5 h-3.5 text-amber-400" />
+                <span className="flex items-center gap-1.5" role="listitem">
+                  <Zap className="w-3.5 h-3.5 text-amber-400" aria-hidden="true" />
                   Tempo médio de resposta: <strong>47 seg</strong>
                 </span>
-                <span className="flex items-center gap-1.5">
-                  <Bot className="w-3.5 h-3.5 text-blue-400" />
+                <span className="flex items-center gap-1.5" role="listitem">
+                  <Bot className="w-3.5 h-3.5 text-blue-400" aria-hidden="true" />
                   <strong>12</strong> imobiliárias ativas
                 </span>
               </div>
 
               {/* Badges / Micro Proofs */}
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs text-stone-200 font-medium pt-1">
-                <span className="flex items-center gap-1.5 bg-stone-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-stone-700 shadow-md">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs text-stone-200 font-medium pt-1" role="list" aria-label="Modalidades do Imobiflow">
+                <span className="flex items-center gap-1.5 bg-stone-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-stone-700 shadow-md" role="listitem">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400" aria-hidden="true" />
                   Modo Solo (Corretor Autônomo)
                 </span>
-                <span className="flex items-center gap-1.5 bg-stone-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-stone-700 shadow-md">
-                  <Users className="w-4 h-4 text-blue-400" />
+                <span className="flex items-center gap-1.5 bg-stone-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-stone-700 shadow-md" role="listitem">
+                  <Users className="w-4 h-4 text-blue-400" aria-hidden="true" />
                   Modo Equipe (Roleta Round-Robin)
                 </span>
-                <span className="flex items-center gap-1.5 bg-stone-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-stone-700 shadow-md">
-                  <Zap className="w-4 h-4 text-amber-400" />
+                <span className="flex items-center gap-1.5 bg-stone-900/80 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-stone-700 shadow-md" role="listitem">
+                  <Zap className="w-4 h-4 text-amber-400" aria-hidden="true" />
                   Entrega no WhatsApp
                 </span>
               </div>
@@ -163,17 +165,18 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-sm sm:text-base font-bold px-7 py-4 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2.5 border border-amber-400/30"
+                  aria-label="Testar Imobiflow grátis por 1 mês no WhatsApp"
                 >
-                  <Zap className="w-5 h-5 text-amber-200" />
+                  <Zap className="w-5 h-5 text-amber-200" aria-hidden="true" />
                   <span>Clique e teste 1 mês grátis</span>
-                  <Sparkles className="w-4 h-4 text-amber-200" />
+                  <Sparkles className="w-4 h-4 text-amber-200" aria-hidden="true" />
                 </a>
               </div>
 
               {/* Guarantee Strip */}
-              <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-[11px] text-stone-300 border-t border-white/20 px-4 py-3">
-                <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+              <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-[11px] text-stone-300 border-t border-white/20 px-4 py-3" role="list" aria-label="Garantias do Imobiflow">
+                <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15" role="listitem">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" aria-hidden="true" />
                   Cancele quando quiser — sem multa
                 </span>
               </div>
@@ -271,14 +274,14 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
       </section>
 
       {/* 2. HOW IT WORKS (O FUNCIONAMENTO PARA O CORRETOR) */}
-      <section id="como-funciona" className="py-16 sm:py-24 bg-stone-100/70 border-b border-stone-200">
+      <section id="como-funciona" aria-labelledby="como-funciona-title" className="py-16 sm:py-24 bg-stone-100/70 border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-14">
           <div className="text-center space-y-3 max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-amber-500/15 text-amber-900 border border-amber-500/30 px-4 py-1 rounded-full text-xs font-bold">
-              <Layers className="w-3.5 h-3.5 text-[#b87b1c]" />
+            <div className="inline-flex items-center gap-2 bg-amber-500/15 text-amber-900 border border-amber-500/30 px-4 py-1 rounded-full text-xs font-bold" aria-hidden="true">
+              <Layers className="w-3.5 h-3.5 text-[#b87b1c]" aria-hidden="true" />
               <span>O Fluxo Operacional</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-black text-stone-900">
+            <h2 id="como-funciona-title" className="text-3xl sm:text-4xl md:text-5xl font-serif font-black text-stone-900">
               Como o Imobiflow funciona para você
             </h2>
             <p className="text-xs sm:text-sm text-stone-600 font-light">
@@ -286,11 +289,11 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" role="list" aria-label="Passos do funcionamento do Imobiflow">
             {/* Step 1 */}
-            <div className="bg-white rounded-3xl p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+            <article className="bg-white rounded-3xl p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" role="listitem">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-2xl bg-amber-100 text-[#b87b1c] flex items-center justify-center font-serif font-black text-xl shadow-xs">
+                <div className="w-12 h-12 rounded-2xl bg-amber-100 text-[#b87b1c] flex items-center justify-center font-serif font-black text-xl shadow-xs" aria-hidden="true">
                   1
                 </div>
                 <h3 className="text-xl font-bold font-serif text-stone-900">
@@ -303,12 +306,12 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               <div className="mt-6 pt-4 border-t border-stone-100 text-[11px] font-mono text-[#b87b1c]">
                 URL: /imoveis/seu-imovel
               </div>
-            </div>
+            </article>
 
             {/* Step 2 */}
-            <div className="bg-white rounded-3xl p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+            <article className="bg-white rounded-3xl p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" role="listitem">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-2xl bg-amber-100 text-[#b87b1c] flex items-center justify-center font-serif font-black text-xl shadow-xs">
+                <div className="w-12 h-12 rounded-2xl bg-amber-100 text-[#b87b1c] flex items-center justify-center font-serif font-black text-xl shadow-xs" aria-hidden="true">
                   2
                 </div>
                 <h3 className="text-xl font-bold font-serif text-stone-900">
@@ -321,12 +324,12 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               <div className="mt-6 pt-4 border-t border-stone-100 text-[11px] font-medium text-emerald-700">
                 SEO & Open Graph Otimizados
               </div>
-            </div>
+            </article>
 
             {/* Step 3 */}
-            <div className="bg-white rounded-3xl p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+            <article className="bg-white rounded-3xl p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" role="listitem">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-2xl bg-amber-100 text-[#b87b1c] flex items-center justify-center font-serif font-black text-xl shadow-xs">
+                <div className="w-12 h-12 rounded-2xl bg-amber-100 text-[#b87b1c] flex items-center justify-center font-serif font-black text-xl shadow-xs" aria-hidden="true">
                   3
                 </div>
                 <h3 className="text-xl font-bold font-serif text-stone-900">
@@ -339,12 +342,12 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               <div className="mt-6 pt-4 border-t border-stone-100 text-[11px] font-medium text-blue-700">
                 Filtra curiosos sem esforço
               </div>
-            </div>
+            </article>
 
             {/* Step 4 */}
-            <div className="bg-white rounded-3xl p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+            <article className="bg-white rounded-3xl p-7 border border-stone-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all" role="listitem">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-serif font-black text-xl shadow-xs">
+                <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-serif font-black text-xl shadow-xs" aria-hidden="true">
                   4
                 </div>
                 <h3 className="text-xl font-bold font-serif text-stone-900">
@@ -357,20 +360,20 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               <div className="mt-6 pt-4 border-t border-stone-100 text-[11px] font-bold text-emerald-800">
                 Taxa de resposta imediata!
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       {/* 4. SOLO VS TEAM (ROLETA ROUND-ROBIN) */}
-      <section id="solo-vs-equipe" className="py-16 sm:py-24 bg-white border-b border-stone-200">
+      <section id="solo-vs-equipe" aria-labelledby="solo-vs-equipe-title" className="py-16 sm:py-24 bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
           <div className="text-center space-y-3 max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-800 border border-blue-200 px-4 py-1 rounded-full text-xs font-bold">
-              <Users className="w-3.5 h-3.5 text-blue-600" />
+            <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-800 border border-blue-200 px-4 py-1 rounded-full text-xs font-bold" aria-hidden="true">
+              <Users className="w-3.5 h-3.5 text-blue-600" aria-hidden="true" />
               <span>Modelos Flexíveis de Negócio</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-serif font-black text-stone-900">
+            <h2 id="solo-vs-equipe-title" className="text-3xl sm:text-4xl font-serif font-black text-stone-900">
               Feito para o Corretor Autônomo e para a Imobiliária
             </h2>
             <p className="text-xs sm:text-sm text-stone-500 font-light">
@@ -378,13 +381,13 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8" role="list" aria-label="Modalidades de uso do Imobiflow">
             {/* Solo Mode */}
-            <div className="bg-stone-50 rounded-3xl p-8 border-2 border-amber-300/80 shadow-md relative flex flex-col justify-between">
+            <article className="bg-stone-50 rounded-3xl p-8 border-2 border-amber-300/80 shadow-md relative flex flex-col justify-between" role="listitem">
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-2xl bg-amber-100 text-[#b87b1c] flex items-center justify-center">
-                    <UserCheck className="w-7 h-7" />
+                  <div className="w-12 h-12 rounded-2xl bg-amber-100 text-[#b87b1c] flex items-center justify-center" aria-hidden="true">
+                    <UserCheck className="w-7 h-7" aria-hidden="true" />
                   </div>
                   <span className="bg-[#b87b1c] text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                     Modo Solo
@@ -400,17 +403,17 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                   </p>
                 </div>
 
-                <ul className="space-y-3.5 text-xs sm:text-sm text-stone-700">
-                  <li className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-emerald-600 shrink-0" />
+                <ul className="space-y-3.5 text-xs sm:text-sm text-stone-700" role="list" aria-label="Benefícios do Modo Solo">
+                  <li className="flex items-start gap-3" role="listitem">
+                    <Check className="w-5 h-5 text-emerald-600 shrink-0" aria-hidden="true" />
                     <span><strong>100% no seu WhatsApp:</strong> Todos os leads qualificados dos seus anúncios caem direto no seu telefone pessoal.</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-emerald-600 shrink-0" />
+                  <li className="flex items-start gap-3" role="listitem">
+                    <Check className="w-5 h-5 text-emerald-600 shrink-0" aria-hidden="true" />
                     <span><strong>Marca Própria:</strong> Seu nome, seu CRECI e seus dados em destaque na Landing Page.</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-emerald-600 shrink-0" />
+                  <li className="flex items-start gap-3" role="listitem">
+                    <Check className="w-5 h-5 text-emerald-600 shrink-0" aria-hidden="true" />
                     <span><strong>Zero Comissões Repassadas:</strong> Todo o lead captado é seu para negociar e fechar.</span>
                   </li>
                 </ul>
@@ -426,14 +429,14 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                   Clique e teste 1 mês grátis
                 </a>
               </div>
-            </div>
+            </article>
 
             {/* Team Mode */}
-            <div className="bg-stone-50 rounded-3xl p-8 border-2 border-blue-300/80 shadow-md relative flex flex-col justify-between">
+            <article className="bg-stone-50 rounded-3xl p-8 border-2 border-blue-300/80 shadow-md relative flex flex-col justify-between" role="listitem">
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center">
-                    <Building2 className="w-7 h-7" />
+                  <div className="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center" aria-hidden="true">
+                    <Building2 className="w-7 h-7" aria-hidden="true" />
                   </div>
                   <span className="bg-blue-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                     Modo Equipe
@@ -449,17 +452,17 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                   </p>
                 </div>
 
-                <ul className="space-y-3.5 text-xs sm:text-sm text-stone-700">
-                  <li className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-blue-600 shrink-0" />
+                <ul className="space-y-3.5 text-xs sm:text-sm text-stone-700" role="list" aria-label="Benefícios do Modo Equipe">
+                  <li className="flex items-start gap-3" role="listitem">
+                    <Check className="w-5 h-5 text-blue-600 shrink-0" aria-hidden="true" />
                     <span><strong>Roleta Round-Robin:</strong> Distribui os leads qualificados em fila sequencial entre corretores de plantão.</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-blue-600 shrink-0" />
+                  <li className="flex items-start gap-3" role="listitem">
+                    <Check className="w-5 h-5 text-blue-600 shrink-0" aria-hidden="true" />
                     <span><strong>Controle de Disponibilidade:</strong> Ative ou pause corretores (<em>Disponível</em>, <em>Ausente</em>, <em>Bloqueado</em>).</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-blue-600 shrink-0" />
+                  <li className="flex items-start gap-3" role="listitem">
+                    <Check className="w-5 h-5 text-blue-600 shrink-0" aria-hidden="true" />
                     <span><strong>Gestão Centralizada:</strong> Métricas globais de captação e volume por corretor da equipe.</span>
                   </li>
                 </ul>
@@ -471,24 +474,25 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center inline-block border border-amber-400/30"
+                  aria-label="Testar Imobiflow Modo Equipe grátis por 1 mês no WhatsApp"
                 >
                   Clique e teste 1 mês grátis
                 </a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       {/* 5. SCORECARD & INCOME MATRIX */}
-      <section id="regras-escore" className="py-16 sm:py-24 bg-stone-100/70 border-b border-stone-200">
+      <section id="regras-escore" aria-labelledby="regras-escore-title" className="py-16 sm:py-24 bg-stone-100/70 border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
           <div className="text-center space-y-3 max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-amber-500/15 text-amber-900 border border-amber-500/30 px-4 py-1 rounded-full text-xs font-bold">
-              <Calculator className="w-3.5 h-3.5 text-[#b87b1c]" />
+            <div className="inline-flex items-center gap-2 bg-amber-500/15 text-amber-900 border border-amber-500/30 px-4 py-1 rounded-full text-xs font-bold" aria-hidden="true">
+              <Calculator className="w-3.5 h-3.5 text-[#b87b1c]" aria-hidden="true" />
               <span>Matriz Financeira de Pontuação</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-serif font-black text-stone-900">
+            <h2 id="regras-escore-title" className="text-3xl sm:text-4xl font-serif font-black text-stone-900">
               Critérios de Escore & Qualificação por Renda
             </h2>
             <p className="text-xs sm:text-sm text-stone-600 font-light">
@@ -498,29 +502,29 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Table */}
-            <div className="lg:col-span-7 bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden">
-              <div className="p-4 bg-stone-950 text-white flex items-center justify-between text-xs font-bold">
-                <span>FAIXA DE RENDA MENSAL</span>
-                <span>ESCORE GERADO PELA IA</span>
+            <div className="lg:col-span-7 bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden" role="table" aria-label="Matriz de escore por faixa de renda">
+              <div className="p-4 bg-stone-950 text-white flex items-center justify-between text-xs font-bold" role="row">
+                <span role="columnheader">FAIXA DE RENDA MENSAL</span>
+                <span role="columnheader">ESCORE GERADO PELA IA</span>
               </div>
-              <div className="divide-y divide-stone-200 text-xs sm:text-sm">
-                <div className="p-4 flex items-center justify-between">
-                  <span className="font-medium text-stone-700">Até R$ 3.000,00</span>
-                  <div className="flex items-center gap-2">
+              <div className="divide-y divide-stone-200 text-xs sm:text-sm" role="rowgroup">
+                <div className="p-4 flex items-center justify-between" role="row">
+                  <span className="font-medium text-stone-700" role="cell">Até R$ 3.000,00</span>
+                  <div className="flex items-center gap-2" role="cell">
                     <span className="font-mono font-bold text-stone-900">25 pontos</span>
                     <span className="text-[10px] bg-rose-100 text-rose-800 font-bold px-2 py-0.5 rounded">Risco Alto</span>
                   </div>
                 </div>
-                <div className="p-4 flex items-center justify-between bg-stone-50/50">
-                  <span className="font-medium text-stone-700">R$ 3.000,00 a R$ 5.000,00</span>
-                  <div className="flex items-center gap-2">
+                <div className="p-4 flex items-center justify-between bg-stone-50/50" role="row">
+                  <span className="font-medium text-stone-700" role="cell">R$ 3.000,00 a R$ 5.000,00</span>
+                  <div className="flex items-center gap-2" role="cell">
                     <span className="font-mono font-bold text-stone-900">50 pontos</span>
                     <span className="text-[10px] bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">Mínimo Padrão</span>
                   </div>
                 </div>
-                <div className="p-4 flex items-center justify-between">
-                  <span className="font-medium text-stone-700">R$ 5.000,00 a R$ 7.000,00</span>
-                  <div className="flex items-center gap-2">
+                <div className="p-4 flex items-center justify-between" role="row">
+                  <span className="font-medium text-stone-700" role="cell">R$ 5.000,00 a R$ 7.000,00</span>
+                  <div className="flex items-center gap-2" role="cell">
                     <span className="font-mono font-bold text-stone-900">75 pontos</span>
                     <span className="text-[10px] bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded">Qualificado</span>
                   </div>
@@ -588,14 +592,14 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
       </section>
 
       {/* 6. PRICING PLANS */}
-      <section id="planos" className="py-16 sm:py-24 bg-white border-b border-stone-200">
+      <section id="planos" aria-labelledby="planos-title" className="py-16 sm:py-24 bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
           <div className="text-center space-y-3 max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 bg-amber-500/15 text-amber-900 border border-amber-500/30 px-4 py-1 rounded-full text-xs font-bold">
-              <Zap className="w-3.5 h-3.5 text-[#b87b1c]" />
+            <div className="inline-flex items-center gap-2 bg-amber-500/15 text-amber-900 border border-amber-500/30 px-4 py-1 rounded-full text-xs font-bold" aria-hidden="true">
+              <Zap className="w-3.5 h-3.5 text-[#b87b1c]" aria-hidden="true" />
               <span>Transparência Total</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-serif font-black text-stone-900">
+            <h2 id="planos-title" className="text-3xl sm:text-4xl font-serif font-black text-stone-900">
               Planos sem pegadinhas nem comissão sobre sua venda
             </h2>
             <p className="text-xs sm:text-sm text-stone-500 font-light">
@@ -603,9 +607,9 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto" role="list" aria-label="Planos de assinatura do Imobiflow">
             {/* Solo Plan */}
-            <div className="bg-stone-50 rounded-3xl p-8 border border-stone-200 shadow-sm flex flex-col justify-between">
+            <article className="bg-stone-50 rounded-3xl p-8 border border-stone-200 shadow-sm flex flex-col justify-between" role="listitem">
               <div className="space-y-5">
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl font-bold font-serif text-stone-900">Plano Corretor Solo</h3>
@@ -621,8 +625,8 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                   Ideal para corretores autônomos que desejam profissionalizar seus anúncios.
                 </p>
 
-                <ul className="space-y-3 text-xs text-stone-700 pt-2">
-                  <li className="flex items-center gap-2">
+                <ul className="space-y-3 text-xs text-stone-700 pt-2" role="list" aria-label="Recursos do Plano Corretor Solo">
+                  <li className="flex items-center gap-2" role="listitem">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span>Landing Pages ilimitadas por imóvel</span>
                   </li>
@@ -646,14 +650,15 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center inline-block border border-amber-400/30"
+                aria-label="Testar Imobiflow Plano Corretor Solo grátis por 1 mês no WhatsApp"
               >
                 Clique e teste 1 mês grátis
               </a>
-            </div>
+            </article>
 
             {/* Team Plan */}
-            <div className="bg-stone-900 text-white rounded-3xl p-8 border-2 border-amber-500 shadow-xl flex flex-col justify-between relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-[#b87b1c] text-white text-[10px] uppercase font-bold tracking-wider px-4 py-1 rounded-bl-xl">
+            <article className="bg-stone-900 text-white rounded-3xl p-8 border-2 border-amber-500 shadow-xl flex flex-col justify-between relative overflow-hidden" role="listitem">
+              <div className="absolute top-0 right-0 bg-[#b87b1c] text-white text-[10px] uppercase font-bold tracking-wider px-4 py-1 rounded-bl-xl" aria-hidden="true">
                 Mais Popular
               </div>
 
@@ -672,21 +677,21 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                   Para imobiliárias e gestores com plantão de corretores em rodízio.
                 </p>
 
-                <ul className="space-y-3 text-xs text-stone-200 pt-2">
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                <ul className="space-y-3 text-xs text-stone-200 pt-2" role="list" aria-label="Recursos do Plano Imobiliária & Equipe">
+                  <li className="flex items-center gap-2" role="listitem">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" aria-hidden="true" />
                     <span>Tudo do plano Solo incluído</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                  <li className="flex items-center gap-2" role="listitem">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" aria-hidden="true" />
                     <span><strong>Roleta Round-Robin:</strong> Distribuição de plantão</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                  <li className="flex items-center gap-2" role="listitem">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" aria-hidden="true" />
                     <span>Até 15 corretores vinculados</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" />
+                  <li className="flex items-center gap-2" role="listitem">
+                    <CheckCircle2 className="w-4 h-4 text-amber-400 shrink-0" aria-hidden="true" />
                     <span>Painel Admin com contagem de leads por corretor</span>
                   </li>
                 </ul>
@@ -697,19 +702,20 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 w-full bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white font-bold text-xs sm:text-sm py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center inline-block border border-amber-400/30"
+                aria-label="Testar Imobiflow Plano Imobiliária & Equipe grátis por 1 mês no WhatsApp"
               >
                 Clique e teste 1 mês grátis
               </a>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
       {/* 7. FAQ ACCORDION */}
-      <section id="faq" className="py-16 sm:py-24 bg-stone-50 border-b border-stone-200">
+      <section id="faq" aria-labelledby="faq-title" className="py-16 sm:py-24 bg-stone-50 border-b border-stone-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-8 space-y-10">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl sm:text-4xl font-serif font-black text-stone-900">
+            <h2 id="faq-title" className="text-3xl sm:text-4xl font-serif font-black text-stone-900">
               Perguntas Frequentes (FAQ)
             </h2>
             <p className="text-xs sm:text-sm text-stone-500 font-light">
@@ -719,28 +725,38 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div 
+              <article 
                 key={index}
                 className="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-2xs"
               >
-                <button
-                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                  className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-serif font-bold text-stone-900 text-sm sm:text-base cursor-pointer hover:bg-stone-50 transition-colors"
-                >
-                  <span>{faq.q}</span>
-                  {openFaq === index ? (
-                    <ChevronUp className="w-5 h-5 text-[#b87b1c] shrink-0" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-stone-400 shrink-0" />
-                  )}
-                </button>
+                <h3>
+                  <button
+                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 font-serif font-bold text-stone-900 text-sm sm:text-base cursor-pointer hover:bg-stone-50 transition-colors"
+                    aria-expanded={openFaq === index}
+                    aria-controls={`faq-answer-${index}`}
+                    id={`faq-question-${index}`}
+                  >
+                    <span>{faq.q}</span>
+                    {openFaq === index ? (
+                      <ChevronUp className="w-5 h-5 text-[#b87b1c] shrink-0" aria-hidden="true" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-stone-400 shrink-0" aria-hidden="true" />
+                    )}
+                  </button>
+                </h3>
 
                 {openFaq === index && (
-                  <div className="px-5 pb-6 sm:px-6 text-xs sm:text-sm text-stone-600 font-light leading-relaxed border-t border-stone-100 pt-3">
+                  <div 
+                    id={`faq-answer-${index}`}
+                    role="region"
+                    aria-labelledby={`faq-question-${index}`}
+                    className="px-5 pb-6 sm:px-6 text-xs sm:text-sm text-stone-600 font-light leading-relaxed border-t border-stone-100 pt-3"
+                  >
                     {faq.a}
                   </div>
                 )}
-              </div>
+              </article>
             ))}
           </div>
         </div>
@@ -748,19 +764,20 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
 
       {/* 8. FINAL CALL TO ACTION */}
       <section 
+        aria-labelledby="final-cta-title"
         className="py-20 sm:py-24 bg-stone-950 text-white text-center relative overflow-hidden bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(135deg, rgba(12, 10, 9, 0.94) 0%, rgba(28, 25, 23, 0.89) 50%, rgba(12, 10, 9, 0.95) 100%), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1920&q=85')`,
         }}
       >
-        <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-8 space-y-6 relative z-10">
-          <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-400/30 px-4 py-1 rounded-full text-xs font-bold backdrop-blur-md">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+          <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-400/30 px-4 py-1 rounded-full text-xs font-bold backdrop-blur-md" aria-hidden="true">
+            <Sparkles className="w-3.5 h-3.5 text-amber-400" aria-hidden="true" />
             <span>Comece Hoje Mesmo</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-black text-white leading-tight drop-shadow-md">
+          <h2 id="final-cta-title" className="text-3xl sm:text-4xl md:text-5xl font-serif font-black text-white leading-tight drop-shadow-md">
             Pronto para receber leads qualificados direto no seu WhatsApp?
           </h2>
 
@@ -774,8 +791,9 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold px-8 py-4 rounded-xl shadow-xl transition-all flex items-center gap-2 border border-amber-400/30"
+              aria-label="Testar Imobiflow grátis por 1 mês no WhatsApp"
             >
-              <Zap className="w-4 h-4 text-amber-200" />
+              <Zap className="w-4 h-4 text-amber-200" aria-hidden="true" />
               <span>Clique e teste 1 mês grátis</span>
             </a>
 
@@ -784,8 +802,9 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               className="bg-stone-900/90 hover:bg-stone-800 text-white border border-stone-700 text-xs sm:text-sm font-semibold px-6 py-4 rounded-xl transition-all flex items-center gap-2 backdrop-blur-md"
+              aria-label="Falar com consultor do Imobiflow no WhatsApp"
             >
-              <Phone className="w-4 h-4 text-emerald-400" />
+              <Phone className="w-4 h-4 text-emerald-400" aria-hidden="true" />
               <span>Falar com Consultor</span>
             </a>
           </div>

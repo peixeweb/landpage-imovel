@@ -22,7 +22,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
   };
 
   return (
-    <section id="hero-section" className="relative">
+    <section id="hero-section" className="relative" aria-labelledby="hero-title">
       {/* Hero Visual Background with dynamic gradient */}
       <div 
         id="hero-banner-image"
@@ -30,11 +30,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
         style={{
           backgroundImage: `linear-gradient(rgba(10, 15, 30, 0.78), rgba(15, 23, 42, 0.85)), url('/leadvalidado/fundo-sampa.webp')`,
         }}
+        role="img"
+        aria-label="Brasília ao entardecer - imagem de fundo do Imobiflow"
       >
         <div className="max-w-4xl mx-auto text-white space-y-5 animate-fade-in z-10">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-emerald-500/20 backdrop-blur-md border border-emerald-400/50 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg">
-            <Shield className="w-4 h-4 text-emerald-400" />
+          <div className="inline-flex items-center gap-2 bg-emerald-500/20 backdrop-blur-md border border-emerald-400/50 text-emerald-300 px-4 py-1.5 rounded-full text-xs font-bold tracking-wide shadow-lg" role="status" aria-live="polite">
+            <Shield className="w-4 h-4 text-emerald-400" aria-hidden="true" />
             <span>Corretores fecham 3x mais respondendo em até 5 min — sua IA faz isso 24/7</span>
           </div>
 
@@ -49,33 +51,33 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
           </p>
 
           {/* Social Proof Bar */}
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-2 text-xs text-stone-300 border-t border-white/20 px-4 py-2">
-            <span className="flex items-center gap-1.5">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-2 text-xs text-stone-300 border-t border-white/20 px-4 py-2" role="list" aria-label="Prova social e métricas do Imobiflow">
+            <span className="flex items-center gap-1.5" role="listitem">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" aria-hidden="true" />
               <strong>+2.800</strong> leads qualificados este mês
             </span>
-            <span className="flex items-center gap-1.5">
-              <Zap className="w-3.5 h-3.5 text-amber-400" />
+            <span className="flex items-center gap-1.5" role="listitem">
+              <Zap className="w-3.5 h-3.5 text-amber-400" aria-hidden="true" />
               Tempo médio de resposta: <strong>47 seg</strong>
             </span>
-            <span className="flex items-center gap-1.5">
-              <Bot className="w-3.5 h-3.5 text-blue-400" />
+            <span className="flex items-center gap-1.5" role="listitem">
+              <Bot className="w-3.5 h-3.5 text-blue-400" aria-hidden="true" />
               <strong>12</strong> imobiliárias ativas
             </span>
           </div>
 
           {/* Key Value Prop Pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2.5 pt-1 text-xs text-stone-300">
-            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1 rounded-full border border-white/15">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+          <div className="flex flex-wrap items-center justify-center gap-2.5 pt-1 text-xs text-stone-300" role="list" aria-label="Principais benefícios do Imobiflow">
+            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1 rounded-full border border-white/15" role="listitem">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" aria-hidden="true" />
               Landing page instantânea com link próprio
             </span>
-            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1 rounded-full border border-white/15">
-              <Bot className="w-3.5 h-3.5 text-amber-400" />
+            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1 rounded-full border border-white/15" role="listitem">
+              <Bot className="w-3.5 h-3.5 text-amber-400" aria-hidden="true" />
               IA qualifica urgência, entrada e financiamento
             </span>
-            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1 rounded-full border border-white/15">
-              <Zap className="w-3.5 h-3.5 text-amber-400" />
+            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1 rounded-full border border-white/15" role="listitem">
+              <Zap className="w-3.5 h-3.5 text-amber-400" aria-hidden="true" />
               Disparo para o WhatsApp do Corretor
             </span>
           </div>
@@ -87,25 +89,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-[#b87b1c] to-[#9a6514] hover:from-[#a36b17] hover:to-[#84530f] text-white text-xs sm:text-sm font-bold tracking-wide px-6 py-3.5 rounded-xl shadow-xl hover:shadow-amber-500/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 border border-amber-400/30"
+              aria-label="Testar Imobiflow grátis por 1 mês no WhatsApp"
             >
-              <Zap className="w-4 h-4" />
+              <Zap className="w-4 h-4" aria-hidden="true" />
               <span>Clique e teste 1 mês grátis</span>
-              <Sparkles className="w-3.5 h-3.5 text-amber-200" />
+              <Sparkles className="w-3.5 h-3.5 text-amber-200" aria-hidden="true" />
             </a>
             <button
               id="btn-hero-explore-cta"
               onClick={onExploreClick}
               className="flex-1 flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white border border-white/30 text-xs sm:text-sm font-semibold px-6 py-3.5 rounded-xl transition-all backdrop-blur-xs cursor-pointer"
+              aria-label="Ver demonstração ao vivo do Imobiflow"
             >
               <span>Ver demonstração ao vivo</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </button>
           </div>
 
           {/* Guarantee Strip */}
-          <div className="pt-4 flex flex-wrap items-center justify-center gap-6 text-[11px] text-stone-300 border-t border-white/20 px-4 py-3">
-            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
-              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+          <div className="pt-4 flex flex-wrap items-center justify-center gap-6 text-[11px] text-stone-300 border-t border-white/20 px-4 py-3" role="list" aria-label="Garantias do Imobiflow">
+            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15" role="listitem">
+              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" aria-hidden="true" />
               Cancele quando quiser — sem multa
             </span>
           </div>
@@ -117,6 +121,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
         <div 
           id="search-filter-card" 
           className="bg-white rounded-2xl shadow-xl border border-stone-200 p-5 sm:p-7"
+          role="search"
+          aria-label="Busca de imóveis no portal Imobiflow"
         >
           {/* Header tabs for operation */}
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-100 pb-3.5 mb-4">
@@ -129,10 +135,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
               </span>
             </div>
 
-            <div className="flex items-center bg-stone-100 p-1 rounded-xl">
+            <div className="flex items-center bg-stone-100 p-1 rounded-xl" role="tablist" aria-label="Tipo de operação">
               <button
                 type="button"
                 id="tab-op-venda"
+                role="tab"
+                aria-selected={operation === 'Venda'}
+                aria-controls="panel-venda"
                 onClick={() => setOperation('Venda')}
                 className={`px-3.5 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer ${
                   operation === 'Venda'
@@ -145,6 +154,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
               <button
                 type="button"
                 id="tab-op-aluguel"
+                role="tab"
+                aria-selected={operation === 'Aluguel'}
+                aria-controls="panel-aluguel"
                 onClick={() => setOperation('Aluguel')}
                 className={`px-3.5 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer ${
                   operation === 'Aluguel'
@@ -157,6 +169,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
               <button
                 type="button"
                 id="tab-op-todos"
+                role="tab"
+                aria-selected={operation === 'Todos'}
+                aria-controls="panel-todos"
                 onClick={() => setOperation('Todos')}
                 className={`px-3.5 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer ${
                   operation === 'Todos'
@@ -170,17 +185,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
           </div>
 
           {/* Filter Form */}
-          <form onSubmit={handleSearchSubmit} className="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center">
+          <form onSubmit={handleSearchSubmit} className="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center" noValidate>
             {/* Property Type Dropdown */}
             <div className="sm:col-span-4">
               <label htmlFor="filter-type-select" className="sr-only">Tipo de Imóvel</label>
               <div className="relative">
-                <Building className="w-4 h-4 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <Building className="w-4 h-4 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true" />
                 <select
                   id="filter-type-select"
                   value={type}
                   onChange={(e) => setType(e.target.value as any)}
                   className="w-full bg-stone-50 border border-stone-300 rounded-xl pl-9 pr-8 py-2.5 text-xs sm:text-sm text-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white transition-all appearance-none cursor-pointer"
+                  aria-label="Selecione o tipo de imóvel"
                 >
                   <option value="Todos">Selecione o tipo de imóvel</option>
                   <option value="Apartamento">Apartamento</option>
@@ -198,7 +214,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
             <div className="sm:col-span-5">
               <label htmlFor="filter-neighborhood-input" className="sr-only">Localização</label>
               <div className="relative">
-                <MapPin className="w-4 h-4 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <MapPin className="w-4 h-4 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true" />
                 <input
                   id="filter-neighborhood-input"
                   type="text"
@@ -206,6 +222,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
                   value={neighborhood}
                   onChange={(e) => setNeighborhood(e.target.value)}
                   className="w-full bg-stone-50 border border-stone-300 rounded-xl pl-9 pr-3 py-2.5 text-xs sm:text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white transition-all"
+                  aria-label="Digite o bairro ou região para busca"
+                  autoComplete="off"
                 />
               </div>
             </div>
@@ -216,16 +234,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
                 type="submit"
                 id="btn-execute-search"
                 className="w-full bg-[#b87b1c] hover:bg-[#a36b17] active:bg-[#925f12] text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                aria-label="Executar busca de imóveis"
               >
-                <Search className="w-4 h-4" />
+                <Search className="w-4 h-4" aria-hidden="true" />
                 <span>Buscar Imóveis</span>
               </button>
             </div>
           </form>
 
           {/* Quick neighborhood chips */}
-          <div className="mt-3.5 pt-3 border-t border-stone-100 flex flex-wrap items-center gap-1.5 text-xs text-stone-500">
-            <span className="font-medium text-stone-700 mr-1">Regiões em destaque:</span>
+          <div className="mt-3.5 pt-3 border-t border-stone-100 flex flex-wrap items-center gap-1.5 text-xs text-stone-500" role="group" aria-label="Regiões em destaque para busca rápida">
+            <span className="font-medium text-stone-700 mr-1" id="regioes-label">Regiões em destaque:</span>
             {['Asa Norte', 'Asa Sul', 'Águas Claras', 'Noroeste', 'Vicente Pires', 'Sudoeste', 'Setor Industrial'].map((b) => (
               <button
                 key={b}
@@ -235,6 +254,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
                   onSearch({ operation, type, neighborhood: b });
                 }}
                 className="bg-stone-100 hover:bg-amber-100 hover:text-amber-900 text-stone-700 px-2.5 py-1 rounded-lg text-[11px] font-medium transition-colors cursor-pointer"
+                aria-describedby="regioes-label"
               >
                 {b}
               </button>
