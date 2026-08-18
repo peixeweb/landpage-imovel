@@ -173,16 +173,8 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               {/* Guarantee Strip */}
               <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-[11px] text-stone-300 border-t border-white/20 px-4 py-3">
                 <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                  Setup grátis — configuramos sua 1ª landing
-                </span>
-                <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                   Cancele quando quiser — sem multa
-                </span>
-                <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
-                  <Zap className="w-3.5 h-3.5 text-amber-400" />
-                  1ª landing page grátis para sempre
                 </span>
               </div>
             </div>
@@ -213,11 +205,29 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
                 <div className="space-y-3 bg-stone-950/60 p-4 rounded-2xl border border-stone-800 text-xs mb-4">
                   <div className="bg-stone-800/90 p-3 rounded-xl rounded-tl-none border border-stone-700 shadow-2xs text-stone-200 space-y-1">
                     <p className="font-semibold text-amber-300">IA Imobiflow:</p>
-                    <p>Olá Carlos! Vi que você se interessou pelo apartamento no Noroeste ({sampleProperty.code}). Para agilizar sua visita, qual sua faixa de renda familiar mensal?</p>
+                    <p>Oi bom dia, sou a IA do Imobiflow. Vi que você se interessou pelo apartamento no Noroeste ({sampleProperty.code}). Por favor, qual seu nome?</p>
                   </div>
 
                   <div className="bg-amber-500/20 text-amber-100 p-3 rounded-xl rounded-tr-none ml-auto max-w-[85%] border border-amber-500/40 font-medium">
-                    "Minha renda comprovada é de cerca de R$ 8.500,00 e tenho R$ 160.000 para dar de entrada."
+                    "Olá, sou o Carlos."
+                  </div>
+
+                  <div className="bg-stone-800/90 p-3 rounded-xl rounded-tl-none border border-stone-700 shadow-2xs text-stone-200 space-y-1">
+                    <p className="font-semibold text-amber-300">IA Imobiflow:</p>
+                    <p>Olá Carlos! Para agilizar sua visita, qual sua profissão?</p>
+                  </div>
+
+                  <div className="bg-amber-500/20 text-amber-100 p-3 rounded-xl rounded-tr-none ml-auto max-w-[85%] border border-amber-500/40 font-medium">
+                    "Sou professor."
+                  </div>
+
+                  <div className="bg-stone-800/90 p-3 rounded-xl rounded-tl-none border border-stone-700 shadow-2xs text-stone-200 space-y-1">
+                    <p className="font-semibold text-amber-300">IA Imobiflow:</p>
+                    <p>É um prazer, professor! Gostaria de saber sua faixa salarial?</p>
+                  </div>
+
+                  <div className="bg-amber-500/20 text-amber-100 p-3 rounded-xl rounded-tr-none ml-auto max-w-[85%] border border-amber-500/40 font-medium">
+                    "Minha renda comprovada é de cerca de R$ 8.500,00."
                   </div>
 
                   <div className="bg-emerald-950/70 border border-emerald-500/50 p-3 rounded-xl text-emerald-100 space-y-1.5">

@@ -105,16 +105,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
           {/* Guarantee Strip */}
           <div className="pt-4 flex flex-wrap items-center justify-center gap-6 text-[11px] text-stone-300 border-t border-white/20 px-4 py-3">
             <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
-              <Shield className="w-3.5 h-3.5 text-emerald-400" />
-              Setup grátis — configuramos sua 1ª landing
-            </span>
-            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
               Cancele quando quiser — sem multa
-            </span>
-            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-xs px-3 py-1.5 rounded-full border border-white/15">
-              <Zap className="w-3.5 h-3.5 text-amber-400" />
-              1ª landing page grátis para sempre
             </span>
           </div>
         </div>
