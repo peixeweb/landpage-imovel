@@ -143,7 +143,7 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
               </div>
 
               <h1 id="hero-title-main" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-black tracking-tight text-white leading-[1.12] drop-shadow-md">
-                Pare de perder leads para quem responde rápido. <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400">Sua IA qualifica e entrega no WhatsApp</span> enquanto você atende visitas.
+                Pare de perder leads para quem responde rápido. <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400">Imobiflow IA qualifica e entrega no WhatsApp</span> enquanto você atende visitas.
               </h1>
 
               <p className="text-base sm:text-lg text-stone-200 font-light max-w-2xl leading-relaxed drop-shadow-xs">
