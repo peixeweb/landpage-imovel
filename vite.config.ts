@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/landpage-imovel/',
+    base: '/leadvalidado/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

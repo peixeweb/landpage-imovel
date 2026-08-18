@@ -88,7 +88,7 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
         id="hero-section" 
         className="relative overflow-hidden pt-12 pb-20 md:pt-18 md:pb-28 border-b border-stone-800 bg-stone-950 text-white bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(12, 10, 9, 0.93) 0%, rgba(28, 25, 23, 0.88) 45%, rgba(12, 10, 9, 0.85) 100%), url('/landpage-imovel/fundo-sampa.webp')`,
+          backgroundImage: `linear-gradient(135deg, rgba(12, 10, 9, 0.93) 0%, rgba(28, 25, 23, 0.88) 45%, rgba(12, 10, 9, 0.85) 100%), url('/leadvalidado/fundo-sampa.webp')`,
         }}
       >
         {/* Subtle decorative glow overlays */}
