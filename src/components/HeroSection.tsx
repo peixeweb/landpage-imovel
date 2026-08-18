@@ -23,7 +23,28 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
 
   return (
     <section id="hero-section" className="relative" aria-labelledby="hero-title">
-      {/* Hero Visual Background with dynamic gradient */}
+      {/* Hero Visual Background - LCP optimized with img element */}
+      <img
+        src="/leadvalidado/fundo-sampa.webp"
+        alt=""
+        aria-hidden="true"
+        fetchpriority="high"
+        loading="eager"
+        decoding="async"
+        width="1920"
+        height="1080"
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+        style={{
+          objectFit: 'cover',
+        }}
+      />
+      {/* Gradient overlay */}
+      <div
+        className="absolute inset-0 bg-gradient-to-b from-[#0a0f1e]/cc to-[#0f172a]/d9 -z-10"
+        aria-hidden="true"
+      />
+      
+      {/* Hero Visual Background with dynamic gradient (fallback) */}
       <div 
         id="hero-banner-image"
         className="relative min-h-[460px] sm:min-h-[500px] md:min-h-[540px] w-full bg-cover bg-center flex flex-col items-center justify-center text-center px-4 pt-10 pb-28"
@@ -32,6 +53,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreCli
         }}
         role="img"
         aria-label="Brasília ao entardecer - imagem de fundo do Imobiflow"
+        aria-hidden="true"
       >
         <div className="max-w-4xl mx-auto text-white space-y-5 animate-fade-in z-10">
           {/* Badge */}

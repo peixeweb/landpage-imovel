@@ -88,13 +88,37 @@ export const ImobiFlowLandingPage: React.FC<ImobiFlowLandingPageProps> = ({
         id="hero-section" 
         aria-labelledby="hero-title-main"
         className="relative overflow-hidden pt-12 pb-20 md:pt-18 md:pb-28 border-b border-stone-800 bg-stone-950 text-white bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(135deg, rgba(12, 10, 9, 0.93) 0%, rgba(28, 25, 23, 0.88) 45%, rgba(12, 10, 9, 0.85) 100%), url('/leadvalidado/fundo-sampa.webp')`,
-        }}
       >
+        {/* LCP optimized hero image */}
+        <img
+          src="/leadvalidado/fundo-sampa.webp"
+          alt=""
+          aria-hidden="true"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+          width="1920"
+          height="1080"
+          className="absolute inset-0 w-full h-full object-cover -z-10"
+          style={{ objectFit: 'cover' }}
+        />
+        {/* Gradient overlay */}
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-[#0c0a09]/ee via-[#1c1917]/e1 to-[#0c0a09]/f2 -z-10"
+          aria-hidden="true"
+        />
         {/* Subtle decorative glow overlays */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+        
+        {/* Fallback CSS background for compatibility */}
+        <div 
+          className="absolute inset-0 -z-20"
+          style={{
+            backgroundImage: `linear-gradient(135deg, rgba(12, 10, 9, 0.93) 0%, rgba(28, 25, 23, 0.88) 45%, rgba(12, 10, 9, 0.85) 100%), url('/leadvalidado/fundo-sampa.webp')`,
+          }}
+          aria-hidden="true"
+        />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

@@ -47,9 +47,9 @@
     <link rel="manifest" href="/leadvalidado/manifest.webmanifest" />
 
     <!-- ==================== PRELOAD / PREFETCH ==================== -->
-    <link rel="preload" as="image" href="/leadvalidado/fundo-sampa.webp" />
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/plusjakartasans/v12/6Nu59ENSt-HAADcVjJ__9RhXDA.woff2" />
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_rs.woff2" />
+    <link rel="preload" as="image" href="/leadvalidado/fundo-sampa.webp" fetchpriority="high" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/plusjakartasans/v12/6Nu59ENSt-HAADcVjJ__9RhXDA.woff2" fetchpriority="high" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_rs.woff2" fetchpriority="high" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,6 +59,7 @@
 
     <!-- ==================== FONTS ==================== -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="preload" as="style" crossorigin />
 
     <!-- ==================== STRUCTURED DATA (JSON-LD) ==================== -->
     <script type="application/ld+json">
